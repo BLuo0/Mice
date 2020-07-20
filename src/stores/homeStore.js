@@ -12,11 +12,15 @@ export class HomeStore {
   }
 
   @action.bound
+  chartChange = (e) =>{
+    console.log(e)
+  }
+
+  @action.bound
   increase = () => {
     this.counter += 1
   }
-
-  @action.bound 
+  @action.bound
   async fetchList(params) {
     try {
       this.listData.loading = true
@@ -31,10 +35,10 @@ export class HomeStore {
         }
       }
       if (response)
-      return response
+        return response
     } catch (error) {
-      return {success: false, data: {}}
-    } 
+      return { success: false, data: {} }
+    }
   }
 
 }

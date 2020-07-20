@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css';
+import 'react-grid-layout/css/styles.css';
 
 // ReactDOM.render(
 //   <React.StrictMode>

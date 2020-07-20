@@ -1,0 +1,27 @@
+.react-grid-item {
+    padding   : 10px;
+    background: #fff;
+
+    &:hover {
+        box-shadow: 0 0 12px #aaa;
+    }
+}
+
+.react-grid-item:hover .remove {
+    display: inline-block;
+}
+
+.remove {
+    position : absolute;
+    right    : 10px;
+    top      : 5px;
+    cursor   : pointer;
+    z-index  : 999;
+    display  : none;
+    font-size: 20px;
+    color    : #333;
+
+    .child {
+        margin: 0 15px;
+    }
+}

@@ -19,5 +19,16 @@ export const Path = [
   { title: "新闻报告", pathTo: '/ant' },
 ]
 /**
- *首页头部任务标签
+ *创建分享报告标签
  */
+export const Tab = [
+  { id: 1, name: "从空白处创建" },
+  { id: 2, name: "使用模板创建" },
+]
+/**
+ *添加移除图表标签
+ */
+export const Charts = [
+  { id: 1, name: "添加图表" },
+  { id: 2, name: "移除模块" },
+]

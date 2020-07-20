@@ -1,9 +1,11 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { Path } from 'base/enums'
-import Moreset from 'components/Moreset'
-import Userinfo from 'components/Userinfo'
-import Downloads from 'components/Downloads'
+import Moreset from 'components/home/Moreset'
+import Userinfo from 'components/home/Userinfo'
+import Downloads from 'components/home/Downloads'
+import { SearchOutlined } from '@ant-design/icons';
+
 
 import './index.less'
 const Head = () => {
@@ -23,7 +25,7 @@ const Head = () => {
             </div>
             <div className="setinfo">
                 <main>
-                    <i></i>
+                    <SearchOutlined style={{ fontSize: "20px", color: "#FFF" }} />
                 </main>
                 <Moreset />
                 <Downloads />
